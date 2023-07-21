@@ -296,14 +296,20 @@ h1{
   .boton-principal:hover {
     background-color:lightcoral;
   } 
-   .flecha:hover {
+   .first-button:hover .flecha {
     animation-name: move;
     animation-duration: 3s;
     animation-iteration-count:infinite;
   }
+  .second-button:hover .flecha{
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+  }
+  }
   
  
-}
+
     
 
     
