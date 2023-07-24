@@ -275,6 +275,39 @@ h1 {
     align-items: start;
     justify-content: center;
   }
+  .imagenes {
+    display: grid;
+    grid-template-areas:
+      "tarjeta factura factura"
+      "cel factura factura"
+      "cel pc pc";
+    grid-gap: 35px;
+    padding: 50px 0;
+  }
+  #tarjeta {
+    grid-area: tarjeta;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 15px 30px;
+  }
+  #factura {
+    grid-area: factura;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 5px 10px 40px;
+  }
+  #cel {
+    grid-area: cel;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 5px 2px 60px;
+  }
+  #pc {
+    grid-area: pc;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 2px 40px;
+  }
 }
 @media screen and (min-width: 1024px) {
   h1 {
@@ -362,36 +395,10 @@ h2 {
   width: 95%;
   max-width: 1144px;
 }
-.imagenes {
-  display: grid;
-  grid-template-areas:
-    "tarjeta factura factura"
-    "cel factura factura"
-    "cel pc pc";
-  grid-gap: 35px;
-  padding: 50px 0;
-}
-#tarjeta {
-  grid-area: tarjeta;
+.vertical{
   width: 100%;
-  border-radius: 15px;
-  box-shadow: 5px 15px 30px;
+  margin-top: 20px;
 }
-#factura {
-  grid-area: factura;
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 5px 10px 40px;
-}
-#cel {
-  grid-area: cel;
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 5px 2px 60px;
-}
-#pc {
-  grid-area: pc;
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0px 2px 40px;
-}
+
+
+
